@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-5">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary p-5">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Music Academy</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,16 +24,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="https://www.dictionary.com/browse/contact">Contact</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="file:///Users/anais1/Documents/School/2021-2022/1.The-Field/css-framework/grid-away.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Teachers
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="https://www.dictionary.com/browse/action">Action</a></li>
-                                <li><a class="dropdown-item" href="https://www.dictionary.com/browse/action">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="https://www.dictionary.com/browse/action">Something else here</a></li>
-                            </ul>
-                        </li>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                                Events
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Christmas Concert</a>
+                                <a class="dropdown-item" href="#">New Years Party</a>
+                                <a class="dropdown-item" href="#">...more</a>
+                            </div>
+                        </div>
 
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -42,48 +43,64 @@
             </div>
         </nav>
 
-     <div class="card-deck grid-gap bg-dark text light p-5 card text-center">
+     <div class="card-deck grid-gap bg-secondary text light p-5 card text-center">
          <div class="card border-secondary mb-3">
-             <img class="card-img-top mx-auto hoverable" src="singing.png" alt="Microphone" style="width:250px">
+             <img class="card-img-top mx-auto" src="singing.png" alt="Microphone" style="width:250px">
              <div class="card-body">
                  <h5 class="card-title">Singing lessons</h5>
-                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 <a href="https://www.dictionary.com/browse/singing" class="btn btn-outline-light text-dark mx-auto">learn more</a>
+                 <p class="card-text">Improving your pitch and tone is one of the basics of singing lessons.
+                     Your vocal teacher can help you find different notes and hold on to them.
+                     You'll also learn more about musical scales, and how to hone in on the correct notes when singing.</p>
+                 <a href="https://www.dictionary.com/browse/singing" class="btn btn-outline-light text-dark mx-auto stretched-link">learn more</a>
              </div>
          </div>
          <div class="card border-secondary mb-3">
              <img class="card-img-top mx-auto" src="acting.png" alt="Theatre masks" style="width:250px">
              <div class="card-body">
                  <h5 class="card-title">Acting classes</h5>
-                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 <a href="https://www.dictionary.com/browse/acting" class="btn btn-outline-light text-dark">learn more</a>
+                 <p class="card-text">If someone is a natural performer who loves the idea of entertaining an audience,
+                     then that person may want to consider a career as a professional actor.
+                     Attending acting school and earning an acting degree is one way for a talented actor to sharpen skills and gain credibility in the acting industry.
+                     Here is a guide to acting school and acting degrees.</p>
+                 <a href="https://www.dictionary.com/browse/acting" class="btn btn-outline-light text-dark stretched-link">learn more</a>
              </div>
          </div>
          <div class="card border-secondary mb-3">
              <img class="card-img-top mx-auto" src="music.png" alt="Notes" style="width:250px">
              <div class="card-body">
                  <h5 class="card-title">Music Theory/Scripture</h5>
-                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 <a href="https://www.dictionary.com/browse/music" class="btn btn-outline-light text-dark">learn more</a>
+                 <p class="card-text">Music theory is the study of the practices and possibilities of music.
+                     The Oxford Companion to Music describes three interrelated uses of the term "music theory".
+                     The first is the "rudiments", that are needed to understand music notation (key signatures, time signatures, and rhythmic notation);
+                     the second is learning scholars' views on music from antiquity to the present;
+                     the third is a sub-topic of musicology that "seeks to define processes and general principles in music".
+                     The musicological approach to theory differs from music analysis "in that it takes as its starting-point not the individual work or performance but the fundamental materials from which it is built."[1]</p>
+                 <a href="https://www.dictionary.com/browse/music" class="btn btn-outline-light text-dark stretched-link">learn more</a>
              </div>
          </div>
         <div class="card border-secondary mb-3">
             <img class="card-img-top mx-auto" src="orchestra.png" alt="Conductor" style="width:250px">
             <div class="card-body">
                 <h5 class="card-title">Orchestra</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="https://www.dictionary.com/browse/orchestra" class="btn btn-outline-light text-dark">learn more</a>
+                <p class="card-text">An orchestra (/ˈɔːrkɪstrə/; Italian: [orˈkɛstra]) is a large instrumental ensemble typical of classical music,
+                    which combines instruments from different families, including:
+                    bowed string instruments such as the violin, viola, cello, and double bass;
+                    woodwinds such as the flute, oboe, clarinet, and bassoon;
+                    brass instruments such as the horn, trumpet, trombone, and tuba;
+                    percussion instruments such as the timpani, snare drum, bass drum, cymbals, triangle, tambourine, and mallet percussion instruments</p>
+                <a href="https://www.dictionary.com/browse/orchestra" class="btn btn-outline-light text-dark stretched-link">learn more</a>
             </div>
         </div>
      </div>
 
-         <div class="card-deck grid-gap bg-dark text light p-5 card text-center">
+         <div class="card-deck grid-gap bg-secondary text light p-5 card text-center">
          <div class="card border-secondary mb-3">
                 <img class="card-img-top mx-auto" src="strings.png" alt="Violin" style="width:250px">
                 <div class="card-body">
                     <h5 class="card-title">Strings</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="https://www.dictionary.com/browse/strings" class="btn btn-outline-light text-dark">learn more</a>
+                    <p class="card-text">String instruments, stringed instruments, or chordophones are musical instruments that produce sound from
+                        vibrating strings when a performer plays or sounds the strings in some manner.</p>
+                    <a href="https://www.dictionary.com/browse/strings" class="btn btn-outline-light text-dark stretched-link">learn more</a>
                 </div>
             </div>
 
@@ -92,8 +109,11 @@
              <img class="card-img-top mx-auto" src="percussion.png" alt="Drums" style="width:250px">
              <div class="card-body">
                  <h5 class="card-title">Percussion</h5>
-                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 <a href="https://www.dictionary.com/browse/percussion" class="btn btn-outline-light text-dark">learn more</a>
+                 <p class="card-text">Unlike most of the other players in the orchestra,
+                     a percussionist will usually play many different instruments in one piece of music.
+                     The most common percussion instruments in the orchestra include
+                     the timpani, xylophone, cymbals, triangle, snare drum, bass drum, tambourine, maracas, gongs, chimes, celesta, and piano.</p>
+                 <a href="https://www.dictionary.com/browse/percussion" class="btn btn-outline-light text-dark stretched-link">learn more</a>
              </div>
          </div>
 
@@ -102,8 +122,12 @@
              <img class="card-img-top mx-auto" src="woodwinds.png" alt="Flute" style="width:250px">
              <div class="card-body">
                  <h5 class="card-title">Woodwind instruments</h5>
-                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 <a href="https://www.dictionary.com/browse/woodwind" class="btn btn-outline-light text-dark">learn more</a>
+                 <p class="card-text">The instruments in this family all used to be made of wood, which gives them their name.
+                     Today, they are made of wood, metal, plastic or some combination.
+                     They are all basically narrow cylinders or pipes, with holes, an opening at the bottom end and a mouthpiece at the top.
+                     You play them by blowing air through the mouthpiece (that's the "wind" in "woodwind") and opening or closing the holes with your fingers to change the pitch.
+                     Metal caps called keys cover the holes of most woodwind instruments.</p>
+                 <a href="https://www.dictionary.com/browse/woodwind" class="btn btn-outline-light text-dark stretched-link">learn more</a>
              </div>
          </div>
 
@@ -111,8 +135,12 @@
              <img class="card-img-top mx-auto" src="brass.png" alt="Saxophone" style="width:250px">
              <div class="card-body">
                  <h5 class="card-title">Brass instruments</h5>
-                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 <a href="https://www.dictionary.com/browse/brass-instrument" class="btn btn-outline-light text-dark">learn more</a>
+                 <p class="card-text">If you think the brass family got its name because the instruments are made of brass, you're right!
+                     This family of instruments can play louder than any other in the orchestra and can also be heard from far away.
+                     Although their early ancestors are known to have been made of wood, tusks, animal horns or shells, today's modern instruments are made entirely of brass.
+                     Brass instruments are essentially very long pipes that widen at their ends into a bell-like shape.
+                     The pipes have been curved and twisted into different shapes to make them easier to hold and play.</p>
+                 <a href="https://www.dictionary.com/browse/brass-instrument" class="btn btn-outline-light text-dark stretched-link">learn more</a>
              </div>
          </div>
         </div>
